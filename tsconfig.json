@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"module": "commonjs", //设置程序的模块系统。
+		"target": "es5", //编译目标
+		"jsx": "react-jsx", //控制 JSX 在 JavaScript 文件中的输出方式。
+		"sourceMap": true, //调试显示原始的 TypeScript 代码。
+		"removeComments": true, //移除注释
+		/**
+		 * TypeScript 开启严格模式 ，开启 "noImplicitAny": true,"strictNullChecks": true, "strictFunctionTypes": true,
+		 * "strictBindCallApply": true,"strictPropertyInitialization": true,"noImplicitThis": true,"alwaysStrict": true
+		 */
+		"strict": true,
+		"noImplicitAny": true, //ypeScript无法推断变量的类型时，TypeScript将返回到变量的any。
+		"strictNullChecks": true, //null和undefined有各自不同的类型
+		"moduleResolution": "node", //指定模块解析策略
+		"baseUrl": "./", //基准目录
+		"typeRoots": ["node_modules/@types"], //类型根路径
+		"allowSyntheticDefaultImports": true, //允许合成默认导入
+		"esModuleInterop": true, //ES 模块互操作性
+		"experimentalDecorators": true //ES7类修饰器允许
+	},
+	"exclude": ["node_modules", "config/*"],  //忽略文件
+	"include": ["src/**/*"] //包含文件
+}
