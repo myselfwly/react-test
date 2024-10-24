@@ -10,8 +10,8 @@ import styled from "styled-components";
  *      2. c 的配值信息来自于 api(b) 并依赖于b
  *    d. 每列修改完需要提交
  * 拆分
- *   先做一个列可以修改数据
- *   在去把每一列渲染出来
+ *   先做一个行可以修改数据
+ *   在去把每一行渲染出来
  * 风险
  *   频繁网络请求（性能问题）
  *   定制化很严重（暂不解决）
@@ -20,7 +20,7 @@ import styled from "styled-components";
  *   服务端将整份数据返回之请求一次
  */
 
-//先做一个列可以修改数据，单列
+//先做一个行可以修改数据，单列
 import {Row} from "./Row";
 import {DataType} from "./type";
 import {getData, getOperate, getSex} from "../api";
